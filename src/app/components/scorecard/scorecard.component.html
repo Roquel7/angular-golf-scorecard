@@ -1,0 +1,116 @@
+<h1>Golf Scorecard</h1>
+<mat-card>
+  <p>scorecard works!</p>
+  <table cellspacing="0" cellpadding="0">
+
+    <thead class="header">
+      <td class="holes title">Holes</td>
+      <td class="holes" *ngFor="let hole of outHole"> {{hole}} </td>
+      <td class="holes">OUT</td>
+      <td class="white holes"> </td>
+      <td class="holes" *ngFor="let hole of inHole"> {{hole}} </td>
+      <td class="holes">IN</td>
+      <td class="holes">TOTAL</td>
+
+    </thead>
+
+    <tbody>
+      <td class="courseOne title">{{courseOne.name}}</td>
+      <td class="courseOne" *ngFor="let hole of outHole"> </td>
+      <td class="courseOne"> </td>
+      <td class="white courseOne"> </td>
+      <td class="courseOne" *ngFor="let hole of inHole"> </td>
+      <td class="courseOne"> </td>
+      <td class="courseOne"> </td>
+
+      <tr>
+        <td class="courseTwo title">{{courseTwo.name}}</td>
+        <td class="courseTwo" *ngFor="let hole of outHole"> </td>
+        <td class="courseTwo"> </td>
+        <td class="white courseTwo"> </td>
+        <td class="courseTwo" *ngFor="let hole of inHole"> </td>
+        <td class="courseTwo"> </td>
+        <td class="courseTwo"> </td>
+      </tr>
+
+      <tr>
+        <td class="courseThree title">{{courseThree.name}}</td>
+        <td class="courseThree" *ngFor="let hole of outHole"> </td>
+        <td class="courseThree"> </td>
+        <td class="white courseThree"> </td>
+        <td class="courseThree" *ngFor="let hole of inHole"> </td>
+        <td class="courseThree"> </td>
+        <td class="courseThree"> </td>
+      </tr>
+
+
+
+      <tr>
+        <td class="courseThree title"></td>
+        <td class="courseThree" *ngFor="let number of [1,2,3,4,5,6,7,8,9]"> </td>
+        <td class="courseThree"> </td>
+        <td class="white courseThree"> </td>
+        <td class="courseThree" *ngFor="let number of [10,11,12,13,14,15,16,17,18]"> </td>
+        <td class="courseThree"> </td>
+        <td class="courseThree"> </td>
+      </tr>
+      <tr>
+        <td class="courseThree title"><input type="text" placeholder="1st Player"></td>
+        <td class="courseThree" *ngFor="let number of [1,2,3,4,5,6,7,8,9]"> </td>
+        <td class="courseThree"> </td>
+        <td class="white courseThree"> </td>
+        <td class="courseThree" *ngFor="let number of [10,11,12,13,14,15,16,17,18]"> </td>
+        <td class="courseThree"> </td>
+        <td class="courseThree"> </td>
+      </tr>
+      <tr>
+        <td class="courseThree title"><input type="text" placeholder="2nd Player"></td>
+        <td class="courseThree" *ngFor="let number of [1,2,3,4,5,6,7,8,9]"> </td>
+        <td class="courseThree"> </td>
+        <td class="white courseThree"> </td>
+        <td class="courseThree" *ngFor="let number of [10,11,12,13,14,15,16,17,18]"> </td>
+        <td class="courseThree"> </td>
+        <td class="courseThree"> </td>
+      </tr>
+      <tr>
+        <td class="courseThree title"><input type="text" placeholder="3rd Player"></td>
+        <td class="courseThree" *ngFor="let number of [1,2,3,4,5,6,7,8,9]"> </td>
+        <td class="courseThree"> </td>
+        <td class="white courseThree"> </td>
+        <td class="courseThree" *ngFor="let number of [10,11,12,13,14,15,16,17,18]"> </td>
+        <td class="courseThree"> </td>
+        <td class="courseThree"> </td>
+      </tr>
+      <tr>
+        <td class="courseThree title"> <input type="text" placeholder="4th Player"> </td>
+        <td class="courseThree" *ngFor="let number of [1,2,3,4,5,6,7,8,9]"> </td>
+        <td class="courseThree"> </td>
+        <td class="white courseThree"> </td>
+        <td class="courseThree" *ngFor="let number of [10,11,12,13,14,15,16,17,18]"> </td>
+        <td class="courseThree"> </td>
+        <td class="courseThree"> </td>
+      </tr>
+      <tr>
+        <td class="pars title">Pars</td>
+        <td class="pars" *ngFor="let number of [1,2,3,4,5,6,7,8,9]"> </td>
+        <td class="pars"> </td>
+        <td class="white pars"> </td>
+        <td class="pars" *ngFor="let number of [10,11,12,13,14,15,16,17,18]"> </td>
+        <td class="pars"> </td>
+        <td class="pars"> </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+  <!-- <tr>
+    <td>{{courseList.id}}</td>
+  </tr> -->
+
+  <!-- <tr *ngFor="let course of courseList.data">
+    <td>{{course.id}}</td>
+    <td>{{course.name}}</td>
+    <td>{{course}}</td>
+  </tr> -->
+
+</mat-card>
