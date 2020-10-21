@@ -1,7 +1,11 @@
+table {
+  padding-left: 20px;
+}
+
 h1 {
   text-align: center;
   font-size: 35px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .holes {
@@ -40,5 +44,46 @@ app-courses {
 
 .white {
   background-color: white;
+  border: none;
 }
 
+/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+.number {
+  padding: 5px;
+  font-size: 15px;
+  width: 45px;
+}
+
+input {
+  display: block;
+  outline: none;
+  border: none !important;
+}
+
+
+.names  {
+  text-align: center;
+  margin: inherit;
+  border: none;
+}
+
+.firstPlayer, .secondPlayer, .thirdPlayer, .fourthPlayer, .handicap {
+  height: 2.5em;
+  padding: 0;
+}
+
+.form {
+  text-align: center;
+  margin: -.4em 0
+}
+
+.button {
+  padding: 0;
+  border: none;
+  padding-right: 5px;
+}
