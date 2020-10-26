@@ -11,6 +11,13 @@ import { MaterialModule } from './modules/material.module';
 import { ScorecardComponent } from './components/scorecard/scorecard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+
+//firebase
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { NotificationComponent } from './components/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     CoursesComponent,
     ScorecardComponent,
+    NotificationComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +34,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    ToastrModule.forRoot()
   ],
   providers: [CoursesService],
   bootstrap: [AppComponent]
